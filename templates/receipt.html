@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Booking Confirmation</h2>
+<p><strong>Booking ID:</strong> {{ booking[0] }}</p>
+<p><strong>Departure:</strong> {{ booking[1] }}</p>
+<p><strong>Arrival:</strong> {{ booking[2] }}</p>
+<p><strong>Seats Booked:</strong> {{ booking[3] }}</p>
+<p><strong>Total Price:</strong> £{{ booking[4] }}</p>
+<a href="{{ url_for('index') }}" class="btn btn-primary">Back to Home</a>
+{% endblock %}
